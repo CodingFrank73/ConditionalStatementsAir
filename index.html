@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+    <link rel="stylesheet" href="assets/sass/main.css">
+</head>
+
+<body>
+    <section>
+        <form action="" onsubmit="return false">
+
+            <div class="slideHeader">
+                <label for="slider">AQI</label>
+                <p id="valueInput"></p>
+            </div>
+
+            <input type="range" name="slider" id="slider" min="0" max="150" value="0" onchange="checkAirQuality()">
+            <div id="lhc"></div>
+            <div id="lhe"></div>
+        </form>
+
+    </section>
+
+    <section>
+        <form action="" onsubmit="return false">
+
+            <label for="zahl">Bitte eine Zahl eingeben:</label>
+            <input type="number" name="zahl" id="zahl">
+            <button onclick="calc(document.getElementById('zahl').value)">Berechnung durchführen</button>
+        </form>
+        <div id="erg1"></div>
+    </section>
+
+    <section>
+        <form action="" onsubmit="return false">
+
+            <label for="zahl1">Bitte Zahl 1 eingeben:</label>
+            <input type="number" name="zahl1" id="zahl1">
+            <label for="zahl2">Bitte Zahl 2 eingeben:</label>
+            <input type="number" name="zahl2" id="zahl2">
+
+            <button
+                onclick="calc2(document.getElementById('zahl1').value, document.getElementById('zahl2').value,)">Berechnung
+                durchführen</button>
+        </form>
+        <div id="erg2"></div>
+    </section>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
