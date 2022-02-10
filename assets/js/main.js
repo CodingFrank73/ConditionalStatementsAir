@@ -1,5 +1,6 @@
 
 let sliderValue = document.getElementById("slider");
+let message;
 
 function checkAirQuality() {
 
@@ -30,13 +31,10 @@ function checkAirQuality() {
     document.body.style.backgroundColor = bgColor;
 }
 
-
 function calc(zahl) {
 
-    console.log("Tetst");
     let delta;
     let ergebnis;
-    let message;
 
     if (zahl > 27) {
         delta = zahl - 27;
